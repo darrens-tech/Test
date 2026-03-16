@@ -224,7 +224,10 @@
        ================================================================ -->
   <section id="tab-products" class="tab-content">
     <div class="products-layout">
-      <div class="products-head">Product Catalogue — scan QR codes with the terminal</div>
+      <div class="products-head" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <span>Product Catalogue — scan QR codes with the terminal</span>
+        <button id="btnNewProduct" class="btn-sm" style="font-size:12px;padding:7px 18px">＋ New Product</button>
+      </div>
       <div id="productsGrid" class="products-grid">
         <div style="color:var(--muted);font-size:12px">Loading products…</div>
       </div>
@@ -237,6 +240,46 @@
      SCRIPTS
      Libraries loaded from CDN, then our app.
      ===================================================================== -->
+
+<!-- =====================================================================
+     CREATE PRODUCT MODAL
+     ===================================================================== -->
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div class="modal">
+    <div class="modal-head">
+      <span>New Product</span>
+      <button id="btnModalClose" class="modal-close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="modalError" class="modal-error hidden"></div>
+
+      <div class="field">
+        <label>Product ID / SKU <span class="req">*</span></label>
+        <input id="formProductId" type="text" placeholder="e.g. TL-005" autocomplete="off" spellcheck="false">
+        <span class="field-hint">Unique identifier — will also be used as the QR code value</span>
+      </div>
+
+      <div class="field">
+        <label>Product Name <span class="req">*</span></label>
+        <input id="formProductName" type="text" placeholder="e.g. Cordless Screwdriver" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label>Description</label>
+        <input id="formProductDesc" type="text" placeholder="Optional description" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label>Category</label>
+        <input id="formProductCat" type="text" placeholder="e.g. Power Tools, Safety, Equipment…" autocomplete="off">
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button id="btnCreateSubmit" class="btn-confirm btn-conf-in" style="padding:10px 24px;font-size:12px">Create Product</button>
+      <button id="btnModalCancel" onclick="closeCreateProduct()" class="btn-cancel" style="padding:10px 16px">Cancel</button>
+    </div>
+  </div>
+</div>
 
 <!-- jsQR  – decode QR codes from camera frames -->
 <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>

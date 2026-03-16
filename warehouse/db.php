@@ -104,6 +104,14 @@ class Database
         return $this->pdo->query('SELECT * FROM products ORDER BY category, name')->fetchAll();
     }
 
+    public function createProduct(string $sku, string $name, string $qrCode, string $desc = '', string $category = 'General'): int
+    {
+        $this->pdo->prepare(
+            'INSERT INTO products (sku, name, qr_code, description, category) VALUES (?,?,?,?,?)'
+        )->execute([$sku, $name, $qrCode, $desc, $category]);
+        return (int) $this->pdo->lastInsertId();
+    }
+
     // ------------------------------------------------------------------ orders
     public function createBorrowingOrder(int $productId, ?string $facePath, string $notes = ''): int
     {

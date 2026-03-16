@@ -483,11 +483,16 @@ function renderDashOrders(orders) {
    PRODUCTS TAB
    ===================================================================== */
 async function loadProducts() {
+  dom.productsGrid.innerHTML = '<div style="color:var(--muted);font-size:12px">Loading products…</div>';
   try {
     const res = await apiFetch('GET', 'products');
-    if (res.success) renderProducts(res.products);
+    if (res.success) {
+      renderProducts(res.products);
+    } else {
+      dom.productsGrid.innerHTML = `<div style="color:var(--red);font-size:12px">Error: ${esc(res.error)}</div>`;
+    }
   } catch (err) {
-    console.error('Products error:', err);
+    dom.productsGrid.innerHTML = `<div style="color:var(--red);font-size:12px">Failed to load: ${esc(err.message)}</div>`;
   }
 }
 
@@ -573,6 +578,58 @@ async function apiFetch(method, action, data = {}) {
 }
 
 /* =====================================================================
+   PRODUCT CREATION MODAL
+   ===================================================================== */
+function openCreateProduct() {
+  el('modalOverlay').classList.remove('hidden');
+  el('modalError').classList.add('hidden');
+  el('formProductId').value  = '';
+  el('formProductName').value = '';
+  el('formProductDesc').value = '';
+  el('formProductCat').value  = '';
+  el('formProductId').focus();
+}
+
+function closeCreateProduct() {
+  el('modalOverlay').classList.add('hidden');
+}
+
+async function submitCreateProduct() {
+  const sku  = el('formProductId').value.trim();
+  const name = el('formProductName').value.trim();
+  const desc = el('formProductDesc').value.trim();
+  const cat  = el('formProductCat').value.trim() || 'General';
+  const errEl = el('modalError');
+
+  if (!sku || !name) {
+    errEl.textContent = 'Product ID and Name are required.';
+    errEl.classList.remove('hidden');
+    return;
+  }
+
+  const btn = el('btnCreateSubmit');
+  btn.disabled = true;
+  btn.textContent = 'Saving…';
+
+  try {
+    const res = await apiFetch('POST', 'create_product', { sku, name, description: desc, category: cat });
+    if (res.success) {
+      closeCreateProduct();
+      loadProducts();
+    } else {
+      errEl.textContent = res.error || 'Failed to create product.';
+      errEl.classList.remove('hidden');
+    }
+  } catch (err) {
+    errEl.textContent = 'Network error: ' + err.message;
+    errEl.classList.remove('hidden');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Create Product';
+  }
+}
+
+/* =====================================================================
    BOOT
    ===================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
@@ -593,4 +650,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Dashboard refresh
   el('btnRefreshDash').addEventListener('click', loadDashboard);
+
+  // Product creation modal
+  el('btnNewProduct').addEventListener('click', openCreateProduct);
+  el('btnModalClose').addEventListener('click', closeCreateProduct);
+  el('btnCreateSubmit').addEventListener('click', submitCreateProduct);
+  el('modalOverlay').addEventListener('click', e => {
+    if (e.target === el('modalOverlay')) closeCreateProduct();
+  });
+  el('formProductId').addEventListener('keydown',   e => e.key === 'Enter' && el('formProductName').focus());
+  el('formProductName').addEventListener('keydown', e => e.key === 'Enter' && submitCreateProduct());
 });

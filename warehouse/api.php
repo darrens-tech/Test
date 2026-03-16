@@ -27,6 +27,7 @@ try {
         'stats'           => handleStats($db),
         'transactions'    => handleTransactions($db),
         'products'        => handleProducts($db),
+        'create_product'  => handleCreateProduct($db),
         default           => respond(['success' => false, 'error' => 'Unknown action: ' . $action]),
     };
 } catch (Throwable $e) {
@@ -126,6 +127,34 @@ function handleTransactions(Database $db): void
 function handleProducts(Database $db): void
 {
     respond(['success' => true, 'products' => $db->getAllProducts()]);
+}
+
+function handleCreateProduct(Database $db): void
+{
+    $sku  = trim($_POST['sku']  ?? '');
+    $name = trim($_POST['name'] ?? '');
+    $desc = trim($_POST['description'] ?? '');
+    $cat  = trim($_POST['category'] ?? 'General') ?: 'General';
+
+    if ($sku === '' || $name === '') {
+        respond(['success' => false, 'error' => 'Product ID and Name are required']);
+        return;
+    }
+
+    // QR code = "QR-" + SKU (auto-generated, same pattern as seeded data)
+    $qrCode = 'QR-' . strtoupper($sku);
+
+    try {
+        $id = $db->createProduct($sku, $name, $qrCode, $desc, $cat);
+        respond(['success' => true, 'id' => $id, 'qr_code' => $qrCode]);
+    } catch (Throwable $e) {
+        // SQLite unique constraint = duplicate SKU
+        if (str_contains($e->getMessage(), 'UNIQUE')) {
+            respond(['success' => false, 'error' => "Product ID '$sku' already exists"]);
+        } else {
+            respond(['success' => false, 'error' => $e->getMessage()]);
+        }
+    }
 }
 
 // ------------------------------------------------------------------ helpers
