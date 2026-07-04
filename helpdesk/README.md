@@ -30,6 +30,38 @@ or drop the `helpdesk/` folder on any PHP 8.1+ host with the `pdo_sqlite`,
 `zip`, `gd` and `curl` extensions (all standard). Open `index.php`,
 press **SYNC TICKETS**.
 
+## Deploying
+
+This is a **PHP + SQLite** app, so it needs a host that runs PHP — it will **not**
+run on static/JS-only platforms like Netlify or GitHub Pages (no PHP runtime,
+read-only filesystem). A `Dockerfile` is included (PHP 8.3 + Apache with `gd`,
+`zip`, `pdo_sqlite`, `curl`) that binds to `$PORT` and works as-is on any
+container host:
+
+**Railway** — New Project → Deploy from GitHub repo → set **Root Directory** to
+`helpdesk` → it auto-detects the Dockerfile and deploys. Done.
+
+**Render** — New → Web Service → connect repo → Runtime **Docker**, **Root
+Directory** `helpdesk` → Create.
+
+**Fly.io** — from the `helpdesk/` folder: `fly launch --copy-config --now`
+(uses the bundled `fly.toml`).
+
+**Any Docker host** —
+```
+docker build -t helpdesk helpdesk/
+docker run -p 8080:8080 helpdesk      # http://localhost:8080
+```
+
+Set the Qiscus and Anthropic keys in **05 Settings** after the first load, or bake
+them in via the host's environment and read them in `db.php`.
+
+> **Filesystem note:** PaaS containers have an *ephemeral* filesystem — synced
+> tickets, images and the SQLite file are wiped on redeploy/restart. The PIM
+> catalog reseeds automatically and you re-press **SYNC** to repopulate. For
+> durable data, attach a persistent volume at `/var/www/html/data` (see the
+> commented block in `fly.toml`).
+
 ## Modes
 
 The system runs fully standalone and upgrades itself as you add credentials
