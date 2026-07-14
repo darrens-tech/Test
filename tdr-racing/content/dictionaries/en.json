@@ -24,10 +24,22 @@
   "pillars": {
     "eyebrow": "SYS · CATALOGUE / FOUR PILLARS",
     "title": "Four systems. One machine.",
-    "power": { "name": "Power", "line": "Engine internals, ignition, CVT and breathing — the parts that make the number." },
-    "handling": { "name": "Handling", "line": "Suspension, wheels and brakes — the parts that keep the number usable." },
-    "style": { "name": "Style", "line": "Bodywork and riding gear — function you can see." },
-    "maintenance": { "name": "Maintenance", "line": "Lubricants, tools and equipment — tolerances stay tolerances." },
+    "power": {
+      "name": "Power",
+      "line": "Engine internals, ignition, CVT and breathing — the parts that make the number."
+    },
+    "handling": {
+      "name": "Handling",
+      "line": "Suspension, wheels and brakes — the parts that keep the number usable."
+    },
+    "style": {
+      "name": "Style",
+      "line": "Bodywork and riding gear — function you can see."
+    },
+    "maintenance": {
+      "name": "Maintenance",
+      "line": "Lubricants, tools and equipment — tolerances stay tolerances."
+    },
     "browse": "Browse"
   },
   "common": {
@@ -87,7 +99,11 @@
     "sub": "Every TDR design cycle ends in the same room: the dynamometer cell at the TDR Technology Center, Jakarta.",
     "cta": "Tour the Technology Center"
   },
-  "news": { "eyebrow": "SYS · LOG / LATEST", "title": "Latest from the workshop.", "all": "All news" },
+  "news": {
+    "eyebrow": "SYS · LOG / LATEST",
+    "title": "Latest from the workshop.",
+    "all": "All news"
+  },
   "footer": {
     "tagline": "High-performance motorcycle parts. Jakarta, since 2003.",
     "sitemap": "Index",
@@ -116,5 +132,24 @@
     "title": "Signal lost.",
     "sub": "This address doesn't resolve. The part you're looking for may have moved to the new catalogue.",
     "cta": "Back to home"
+  },
+  "pdp": {
+    "difficulty": {
+      "rider": "Rider-level · basic tools",
+      "workshop": "Workshop · CVT / engine tooling",
+      "engine-builder": "Engine builder · measurement required"
+    },
+    "vendors": {
+      "tokopedia": "Tokopedia",
+      "shopee": "Shopee",
+      "tdr-hpz": "TDR HPZ Store",
+      "dealer": "Authorized dealer",
+      "whatsapp": "WhatsApp"
+    },
+    "linkPending": "link pending",
+    "authenticity": "Every TDR part ships with authenticity marks. Verification tooling for this site is being migrated — until it lands, verify through official TDR channels.",
+    "years": "now",
+    "material": "Materials",
+    "annotations": "Component callouts"
   }
 }

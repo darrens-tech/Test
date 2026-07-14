@@ -298,6 +298,22 @@ body {
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 70%);
 }
 
+/* /fit silhouette zones — pulse only when motion is allowed */
+[data-motion="full"] .fit-zone-active {
+  animation: zone-pulse 2.4s var(--ease-machined) infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes zone-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+/* Tier 3 exploded viewer: no motion → show the exploded stage, full stop */
+[data-motion="static"] .still-0,
+[data-motion="static"] .still-1 { display: none; }
+[data-motion="static"] .still-2 { opacity: 1 !important; }
+
 /* system toast (watchdog demotion notice) */
 .toast {
   position: fixed;

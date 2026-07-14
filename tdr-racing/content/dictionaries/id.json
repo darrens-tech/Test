@@ -24,10 +24,22 @@
   "pillars": {
     "eyebrow": "SYS · KATALOG / EMPAT PILAR",
     "title": "Empat sistem. Satu mesin.",
-    "power": { "name": "Power", "line": "Jeroan mesin, pengapian, CVT dan pernapasan — part yang menghasilkan angka." },
-    "handling": { "name": "Handling", "line": "Suspensi, roda dan rem — part yang membuat angka itu bisa dipakai." },
-    "style": { "name": "Style", "line": "Bodi dan riding gear — fungsi yang terlihat." },
-    "maintenance": { "name": "Maintenance", "line": "Pelumas, alat dan perlengkapan — menjaga toleransi tetap toleransi." },
+    "power": {
+      "name": "Power",
+      "line": "Jeroan mesin, pengapian, CVT dan pernapasan — part yang menghasilkan angka."
+    },
+    "handling": {
+      "name": "Handling",
+      "line": "Suspensi, roda dan rem — part yang membuat angka itu bisa dipakai."
+    },
+    "style": {
+      "name": "Style",
+      "line": "Bodi dan riding gear — fungsi yang terlihat."
+    },
+    "maintenance": {
+      "name": "Maintenance",
+      "line": "Pelumas, alat dan perlengkapan — menjaga toleransi tetap toleransi."
+    },
     "browse": "Lihat"
   },
   "common": {
@@ -87,7 +99,11 @@
     "sub": "Setiap siklus desain TDR berakhir di ruangan yang sama: sel dynamometer di TDR Technology Center, Jakarta.",
     "cta": "Jelajahi Technology Center"
   },
-  "news": { "eyebrow": "SYS · LOG / TERBARU", "title": "Terbaru dari bengkel.", "all": "Semua berita" },
+  "news": {
+    "eyebrow": "SYS · LOG / TERBARU",
+    "title": "Terbaru dari bengkel.",
+    "all": "Semua berita"
+  },
   "footer": {
     "tagline": "Part motor performa tinggi. Jakarta, sejak 2003.",
     "sitemap": "Indeks",
@@ -116,5 +132,24 @@
     "title": "Sinyal hilang.",
     "sub": "Alamat ini tidak ditemukan. Part yang kamu cari mungkin sudah pindah ke katalog baru.",
     "cta": "Kembali ke beranda"
+  },
+  "pdp": {
+    "difficulty": {
+      "rider": "Level pemilik · alat dasar",
+      "workshop": "Bengkel · alat CVT / mesin",
+      "engine-builder": "Spesialis mesin · perlu pengukuran"
+    },
+    "vendors": {
+      "tokopedia": "Tokopedia",
+      "shopee": "Shopee",
+      "tdr-hpz": "TDR HPZ Store",
+      "dealer": "Dealer resmi",
+      "whatsapp": "WhatsApp"
+    },
+    "linkPending": "tautan menyusul",
+    "authenticity": "Setiap part TDR dilengkapi tanda keaslian. Fitur verifikasi di situs ini sedang dimigrasi — sementara itu, verifikasi lewat kanal resmi TDR.",
+    "years": "sekarang",
+    "material": "Bahan",
+    "annotations": "Anotasi komponen"
   }
 }
