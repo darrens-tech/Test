@@ -1,0 +1,504 @@
+[
+  {
+    "slug": "racing-cvt-set-vario-160-pcx-160",
+    "name": "TDR Racing CVT Set — Vario 160 / PCX 160",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "clutch-transmission-cvt",
+    "claim": "A complete CVT stage — drive face to clutch bell — machined and matched as one system, not seven loose parts.",
+    "claimId": "Satu paket CVT lengkap — drive face sampai mangkok kopling — dimesin dan dipasangkan sebagai satu sistem, bukan tujuh part lepas.",
+    "model3d": {
+      "procedural": "cvt-set",
+      "gltf": null,
+      "annotations": [
+        { "part": "bell", "label": "Clutch bell", "labelId": "Mangkok kopling", "value": "Vented, balance-checked · alloy TBD", "verification": "pending" },
+        { "part": "carrier", "label": "Clutch carrier", "labelId": "Kampas ganda", "value": "3-shoe · lining spec TBD", "verification": "pending" },
+        { "part": "spring", "label": "Torque spring", "labelId": "Per CVT", "value": "Rate TBD", "verification": "pending" },
+        { "part": "sheave", "label": "Sliding sheave + rollers", "labelId": "Rumah roller", "value": "CNC-finished ramps · roller mass TBD", "verification": "pending" },
+        { "part": "belt", "label": "Drive belt", "labelId": "V-belt", "value": "Dimensions TBD", "verification": "pending" },
+        { "part": "face", "label": "Drive face", "labelId": "Kipas puli", "value": "Cooling-fan profile · alloy TBD", "verification": "pending" }
+      ]
+    },
+    "turntable": { "webm": null, "mp4": null, "poster": "/posters/products/racing-cvt-set-vario-160-pcx-160.jpg" },
+    "gallery": [],
+    "materials": [{ "value": "CNC-machined aluminium pulley faces (alloy TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Drive face Ø", "labelId": "Diameter kipas puli", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Roller mass options", "labelId": "Pilihan berat roller", "value": "TBD", "unit": "g", "verification": "pending" },
+      { "label": "Torque spring rate", "labelId": "Kekerasan per CVT", "value": "TBD", "unit": "rpm", "verification": "pending" },
+      { "label": "Clutch bell Ø", "labelId": "Diameter mangkok", "value": "TBD", "unit": "mm", "verification": "pending" }
+    ],
+    "fitment": [
+      { "make": "Honda", "model": "Vario 160", "yearFrom": 2022, "yearTo": null, "engine": "156.9cc eSP+ (K2V)", "verification": "pending" },
+      { "make": "Honda", "model": "PCX 160", "yearFrom": 2021, "yearTo": null, "engine": "156.9cc eSP+ (K1Z)", "verification": "pending" }
+    ],
+    "inTheBox": ["Drive face", "Sliding sheave assembly", "Roller set", "Torque spring", "Clutch carrier", "Clutch bell", "Drive belt"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [
+      { "label": "Spec sheet (PDF)", "href": null },
+      { "label": "Install guide (PDF)", "href": null }
+    ],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null },
+      { "vendor": "tdr-hpz", "href": null }
+    ],
+    "related": ["racing-belt-vario-160-pcx-160", "roller-weight-set-vario-160-pcx-160", "cvt-service-tool-set"],
+    "featured": true
+  },
+  {
+    "slug": "racing-cylinder-kit-nmax-aerox-155",
+    "name": "TDR Racing Cylinder Kit — NMAX / Aerox 155",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "engine",
+    "claim": "Cylinder, piston, rings, pin and clips — supplied as one matched bore-up kit for the 155 VVA platform.",
+    "claimId": "Silinder, piston, ring, pin dan klip — satu paket bore-up yang sudah dipasangkan untuk platform 155 VVA.",
+    "model3d": {
+      "procedural": "cylinder-kit",
+      "gltf": null,
+      "annotations": [
+        { "part": "block", "label": "Cylinder block", "labelId": "Blok silinder", "value": "Bore Ø TBD · sleeve spec TBD", "verification": "pending" },
+        { "part": "piston", "label": "Piston", "labelId": "Piston", "value": "Alloy + coating TBD", "verification": "pending" },
+        { "part": "rings", "label": "Ring set", "labelId": "Set ring", "value": "2× compression + oil ring · end-gap TBD", "verification": "pending" },
+        { "part": "pin", "label": "Wrist pin", "labelId": "Pin piston", "value": "Ø TBD", "verification": "pending" },
+        { "part": "clips", "label": "Circlips", "labelId": "Klip pengunci", "value": "2× included", "verification": "verified" }
+      ]
+    },
+    "turntable": { "webm": null, "mp4": null, "poster": "/posters/products/racing-cylinder-kit-nmax-aerox-155.jpg" },
+    "gallery": [],
+    "materials": [
+      { "value": "Aluminium cylinder, plated bore (process TBD)", "verification": "pending" },
+      { "value": "Piston alloy TBD", "verification": "pending" }
+    ],
+    "specs": [
+      { "label": "Bore", "labelId": "Diameter piston", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Displacement (with stock stroke)", "labelId": "Kapasitas (stroke standar)", "value": "TBD", "unit": "cc", "verification": "pending" },
+      { "label": "Compression ratio", "labelId": "Rasio kompresi", "value": "TBD", "unit": ":1", "verification": "pending" },
+      { "label": "Piston-to-wall clearance", "labelId": "Celah piston-dinding", "value": "TBD", "unit": "µm", "verification": "pending" }
+    ],
+    "fitment": [
+      { "make": "Yamaha", "model": "NMAX 155", "yearFrom": 2015, "yearTo": null, "engine": "155cc VVA Blue Core", "verification": "pending" },
+      { "make": "Yamaha", "model": "Aerox 155", "yearFrom": 2017, "yearTo": null, "engine": "155cc VVA Blue Core", "verification": "pending" }
+    ],
+    "inTheBox": ["Cylinder block", "Piston", "Ring set", "Wrist pin", "Circlips ×2", "Base + head gaskets"],
+    "torqueSpec": null,
+    "installDifficulty": "engine-builder",
+    "dynoData": null,
+    "downloads": [
+      { "label": "Spec sheet (PDF)", "href": null },
+      { "label": "Install guide (PDF)", "href": null }
+    ],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null },
+      { "vendor": "tdr-hpz", "href": null }
+    ],
+    "related": ["racing-camshaft-nmax-aerox-155", "4t-racing-oil", "racing-ecu"],
+    "featured": true
+  },
+  {
+    "slug": "racing-belt-vario-160-pcx-160",
+    "name": "TDR Racing Belt — Vario 160 / PCX 160",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "clutch-transmission-cvt",
+    "claim": "Drive belt built for high-load CVT duty on the 160 eSP+ platform. One belt, one job: hold the ratio.",
+    "claimId": "V-belt untuk beban CVT tinggi di platform 160 eSP+. Satu belt, satu tugas: menjaga rasio.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Reinforced cord construction (spec TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Length", "labelId": "Panjang", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Width", "labelId": "Lebar", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Angle", "labelId": "Sudut", "value": "TBD", "unit": "°", "verification": "pending" }
+    ],
+    "fitment": [
+      { "make": "Honda", "model": "Vario 160", "yearFrom": 2022, "yearTo": null, "engine": "156.9cc eSP+ (K2V)", "verification": "pending" },
+      { "make": "Honda", "model": "PCX 160", "yearFrom": 2021, "yearTo": null, "engine": "156.9cc eSP+ (K1Z)", "verification": "pending" }
+    ],
+    "inTheBox": ["Drive belt"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [{ "label": "Spec sheet (PDF)", "href": null }],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["racing-cvt-set-vario-160-pcx-160", "roller-weight-set-vario-160-pcx-160"],
+    "featured": false
+  },
+  {
+    "slug": "roller-weight-set-vario-160-pcx-160",
+    "name": "TDR Roller Weight Set — Vario 160 / PCX 160",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "clutch-transmission-cvt",
+    "claim": "Matched-mass roller sets to move engagement where you ride. Mass options published on verification.",
+    "claimId": "Set roller dengan massa tersinkron untuk menggeser titik engagement sesuai gaya berkendara. Pilihan berat menyusul setelah verifikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Low-wear outer shell (compound TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Roller dimensions", "labelId": "Dimensi roller", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Mass options", "labelId": "Pilihan berat", "value": "TBD", "unit": "g", "verification": "pending" },
+      { "label": "Set size", "labelId": "Isi set", "value": "6", "unit": "pcs", "verification": "verified" }
+    ],
+    "fitment": [
+      { "make": "Honda", "model": "Vario 160", "yearFrom": 2022, "yearTo": null, "engine": "156.9cc eSP+ (K2V)", "verification": "pending" },
+      { "make": "Honda", "model": "PCX 160", "yearFrom": 2021, "yearTo": null, "engine": "156.9cc eSP+ (K1Z)", "verification": "pending" }
+    ],
+    "inTheBox": ["Roller weights ×6"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["racing-cvt-set-vario-160-pcx-160", "racing-belt-vario-160-pcx-160", "cvt-service-tool-set"],
+    "featured": false
+  },
+  {
+    "slug": "racing-camshaft-nmax-aerox-155",
+    "name": "TDR Racing Camshaft — NMAX / Aerox 155",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "engine",
+    "claim": "A cam profile for the 155 VVA head. Lift and duration go on this page when the figures are verified — not before.",
+    "claimId": "Profil kem untuk head 155 VVA. Angka lift dan durasi tayang di halaman ini setelah diverifikasi — tidak sebelum itu.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Hardened core (treatment TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Intake lift", "labelId": "Lift masuk", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Exhaust lift", "labelId": "Lift buang", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Duration @1mm", "labelId": "Durasi @1mm", "value": "TBD", "unit": "°", "verification": "pending" }
+    ],
+    "fitment": [
+      { "make": "Yamaha", "model": "NMAX 155", "yearFrom": 2015, "yearTo": null, "engine": "155cc VVA Blue Core", "verification": "pending" },
+      { "make": "Yamaha", "model": "Aerox 155", "yearFrom": 2017, "yearTo": null, "engine": "155cc VVA Blue Core", "verification": "pending" }
+    ],
+    "inTheBox": ["Camshaft"],
+    "torqueSpec": null,
+    "installDifficulty": "engine-builder",
+    "dynoData": null,
+    "downloads": [{ "label": "Spec sheet (PDF)", "href": null }],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null }
+    ],
+    "related": ["racing-cylinder-kit-nmax-aerox-155", "racing-ecu"],
+    "featured": false
+  },
+  {
+    "slug": "racing-ecu",
+    "name": "TDR Racing ECU",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "electrical",
+    "claim": "Programmable engine management to replace the closed stock unit. Maps, limits and connector list: spec sheet pending.",
+    "claimId": "Engine management yang bisa diprogram, menggantikan unit standar yang terkunci. Peta, limiter, dan daftar konektor: menunggu spec sheet.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [],
+    "specs": [
+      { "label": "Rev limit", "labelId": "Batas RPM", "value": "TBD", "unit": "rpm", "verification": "pending" },
+      { "label": "Supported models", "labelId": "Model didukung", "value": "TBD", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["ECU unit", "Harness adapter"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [{ "label": "Mapping guide (PDF)", "href": null }],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null }
+    ],
+    "related": ["racing-cylinder-kit-nmax-aerox-155", "racing-camshaft-nmax-aerox-155"],
+    "featured": false
+  },
+  {
+    "slug": "racing-exhaust-system",
+    "name": "TDR Racing Exhaust System",
+    "partNumber": "TBD",
+    "pillar": "power",
+    "subcategory": "induction-exhaust",
+    "claim": "Full system, header to muffler. The dyno chart ships on this page the day it's verified.",
+    "claimId": "Sistem penuh, header sampai silencer. Grafik dyno tayang di halaman ini begitu terverifikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Stainless header (grade TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Header Ø", "labelId": "Diameter header", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Weight", "labelId": "Bobot", "value": "TBD", "unit": "kg", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Header", "Muffler", "Mounting hardware", "Gasket"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [{ "label": "Install guide (PDF)", "href": null }],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["racing-ecu", "racing-cylinder-kit-nmax-aerox-155"],
+    "featured": false
+  },
+  {
+    "slug": "rear-shock-absorber",
+    "name": "TDR Rear Shock Absorber",
+    "partNumber": "TBD",
+    "pillar": "handling",
+    "subcategory": "suspension-chassis",
+    "claim": "A rear shock developed on the scooter platforms TDR races. Damping specification: pending publication.",
+    "claimId": "Shock belakang yang dikembangkan di platform skutik yang dibalap TDR. Spesifikasi damping: menunggu publikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [],
+    "specs": [
+      { "label": "Length", "labelId": "Panjang", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Preload adjustment", "labelId": "Penyetelan preload", "value": "TBD", "verification": "pending" },
+      { "label": "Spring rate", "labelId": "Kekerasan per", "value": "TBD", "unit": "N/mm", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Shock absorber", "Mounting hardware"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null }
+    ],
+    "related": ["fatbar-handlebar", "u-shape-rim-17"],
+    "featured": false
+  },
+  {
+    "slug": "fatbar-handlebar",
+    "name": "TDR Fatbar Handlebar",
+    "partNumber": "TBD",
+    "pillar": "handling",
+    "subcategory": "suspension-chassis",
+    "claim": "The bar half the region rides. 28.6 mm fatbar clamp standard, universal fit.",
+    "claimId": "Setang yang dipakai separuh region ini. Standar clamp fatbar 28,6 mm, pemasangan universal.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Aluminium alloy (series TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Clamp Ø", "labelId": "Diameter clamp", "value": "28.6", "unit": "mm", "verification": "verified" },
+      { "label": "Width", "labelId": "Lebar", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Rise", "labelId": "Tinggi", "value": "TBD", "unit": "mm", "verification": "pending" }
+    ],
+    "fitment": [
+      { "make": "Universal", "model": "28.6 mm clamp mounts", "yearFrom": 2003, "yearTo": null, "verification": "verified" }
+    ],
+    "inTheBox": ["Handlebar", "Bar-end weights"],
+    "torqueSpec": null,
+    "installDifficulty": "rider",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["gp-mirror-set", "rear-shock-absorber"],
+    "featured": true
+  },
+  {
+    "slug": "u-shape-rim-17",
+    "name": "TDR U-Shape Rim 17″",
+    "partNumber": "TBD",
+    "pillar": "handling",
+    "subcategory": "wheel",
+    "claim": "The U-profile aluminium rim raced across the region. Width options and per-size weights: spec table.",
+    "claimId": "Pelek aluminium profil U yang dibalap di seluruh region. Pilihan lebar dan bobot per ukuran: lihat tabel spesifikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Extruded aluminium (alloy TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Diameter", "labelId": "Diameter", "value": "17", "unit": "in", "verification": "verified" },
+      { "label": "Width options", "labelId": "Pilihan lebar", "value": "TBD", "verification": "pending" },
+      { "label": "Weight", "labelId": "Bobot", "value": "TBD", "unit": "g", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Rim ×1"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["racing-brake-disc", "rear-shock-absorber"],
+    "featured": true
+  },
+  {
+    "slug": "racing-brake-disc",
+    "name": "TDR Racing Brake Disc",
+    "partNumber": "TBD",
+    "pillar": "handling",
+    "subcategory": "brake",
+    "claim": "A disc for the braking zones that decide races. Diameter options and thickness spec: pending verification.",
+    "claimId": "Cakram untuk zona pengereman yang menentukan balapan. Pilihan diameter dan ketebalan: menunggu verifikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [{ "value": "Stainless rotor (grade TBD)", "verification": "pending" }],
+    "specs": [
+      { "label": "Diameter options", "labelId": "Pilihan diameter", "value": "TBD", "unit": "mm", "verification": "pending" },
+      { "label": "Thickness", "labelId": "Ketebalan", "value": "TBD", "unit": "mm", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Brake disc", "Mounting bolts"],
+    "torqueSpec": null,
+    "installDifficulty": "workshop",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["u-shape-rim-17"],
+    "featured": false
+  },
+  {
+    "slug": "gp-mirror-set",
+    "name": "TDR GP Mirror Set",
+    "partNumber": "TBD",
+    "pillar": "style",
+    "subcategory": "body",
+    "claim": "Track-profile mirrors that keep road-legal visibility. Stem length and thread specs: table below.",
+    "claimId": "Spion profil balap yang tetap menjaga visibilitas legal jalan raya. Panjang tangkai dan ukuran drat: tabel di bawah.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [],
+    "specs": [
+      { "label": "Thread", "labelId": "Drat", "value": "TBD", "verification": "pending" },
+      { "label": "Stem length", "labelId": "Panjang tangkai", "value": "TBD", "unit": "mm", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Mirror ×2", "Thread adapters"],
+    "torqueSpec": null,
+    "installDifficulty": "rider",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null }
+    ],
+    "related": ["fatbar-handlebar"],
+    "featured": false
+  },
+  {
+    "slug": "riding-gloves",
+    "name": "TDR Riding Gloves",
+    "partNumber": "TBD",
+    "pillar": "style",
+    "subcategory": "riding-gears",
+    "claim": "Gloves for the daily distance between workshop and road. Materials and sizing chart: pending verification.",
+    "claimId": "Sarung tangan untuk jarak harian antara bengkel dan jalan. Bahan dan tabel ukuran: menunggu verifikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [],
+    "specs": [
+      { "label": "Sizes", "labelId": "Ukuran", "value": "TBD", "verification": "pending" },
+      { "label": "Knuckle protection", "labelId": "Pelindung buku jari", "value": "TBD", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Gloves (pair)"],
+    "torqueSpec": null,
+    "installDifficulty": null,
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": [],
+    "featured": false
+  },
+  {
+    "slug": "4t-racing-oil",
+    "name": "TDR 4T Racing Oil",
+    "partNumber": "TBD",
+    "pillar": "maintenance",
+    "subcategory": "lubricants",
+    "claim": "Four-stroke engine oil blended for sustained high rpm. Viscosity grades and volumes: pending verification.",
+    "claimId": "Oli mesin empat langkah yang diracik untuk rpm tinggi berkelanjutan. Grade kekentalan dan volume: menunggu verifikasi.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [],
+    "specs": [
+      { "label": "Type", "labelId": "Tipe", "value": "4-stroke", "verification": "verified" },
+      { "label": "Viscosity grades", "labelId": "Grade kekentalan", "value": "TBD", "verification": "pending" },
+      { "label": "Volume", "labelId": "Volume", "value": "TBD", "unit": "L", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Bottle"],
+    "torqueSpec": null,
+    "installDifficulty": "rider",
+    "dynoData": null,
+    "downloads": [{ "label": "Datasheet (PDF)", "href": null }],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null },
+      { "vendor": "shopee", "href": null }
+    ],
+    "related": ["racing-cylinder-kit-nmax-aerox-155", "cvt-service-tool-set"],
+    "featured": false
+  },
+  {
+    "slug": "cvt-service-tool-set",
+    "name": "TDR CVT Service Tool Set",
+    "partNumber": "TBD",
+    "pillar": "maintenance",
+    "subcategory": "tools-equipment",
+    "claim": "Holder and puller set for CVT service — the tools the rest of this catalogue assumes you have.",
+    "claimId": "Set holder dan puller untuk servis CVT — alat yang diasumsikan oleh katalog ini.",
+    "model3d": null,
+    "turntable": null,
+    "gallery": [],
+    "materials": [],
+    "specs": [
+      { "label": "Contents", "labelId": "Isi", "value": "TBD", "verification": "pending" },
+      { "label": "Compatible platforms", "labelId": "Platform kompatibel", "value": "TBD", "verification": "pending" }
+    ],
+    "fitment": [],
+    "inTheBox": ["Pulley holder", "Clutch spanner", "Case"],
+    "torqueSpec": null,
+    "installDifficulty": "rider",
+    "dynoData": null,
+    "downloads": [],
+    "buyLinks": [
+      { "vendor": "dealer", "href": "/where-to-buy" },
+      { "vendor": "tokopedia", "href": null }
+    ],
+    "related": ["racing-cvt-set-vario-160-pcx-160", "roller-weight-set-vario-160-pcx-160"],
+    "featured": false
+  }
+]

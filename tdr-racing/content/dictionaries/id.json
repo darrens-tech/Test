@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "fit": "Cocokkan motormu",
+    "products": "Produk",
+    "technology": "Teknologi",
+    "racing": "Balap",
+    "news": "Berita",
+    "downloads": "Unduhan",
+    "support": "Dukungan",
+    "whereToBuy": "Tempat membeli",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "menu": "Menu",
+    "close": "Tutup"
+  },
+  "hero": {
+    "eyebrow": "TDR · MACHINE OS · SEJAK 2003 · JAKARTA",
+    "title": "PRESISI ADALAH PRODUKNYA.",
+    "sub": "Part motor performa tinggi — dirancang, diuji dyno, dan diproduksi oleh TDR Industries Group, Jakarta. Sejak 2003.",
+    "ctaFit": "Cari part untuk motormu",
+    "ctaTech": "Masuk ke Technology Center",
+    "skip": "Lewati intro"
+  },
+  "pillars": {
+    "eyebrow": "SYS · KATALOG / EMPAT PILAR",
+    "title": "Empat sistem. Satu mesin.",
+    "power": { "name": "Power", "line": "Jeroan mesin, pengapian, CVT dan pernapasan — part yang menghasilkan angka." },
+    "handling": { "name": "Handling", "line": "Suspensi, roda dan rem — part yang membuat angka itu bisa dipakai." },
+    "style": { "name": "Style", "line": "Bodi dan riding gear — fungsi yang terlihat." },
+    "maintenance": { "name": "Maintenance", "line": "Pelumas, alat dan perlengkapan — menjaga toleransi tetap toleransi." },
+    "browse": "Lihat"
+  },
+  "common": {
+    "viewAll": "Lihat semua",
+    "learnMore": "Selengkapnya",
+    "readMore": "Baca selengkapnya",
+    "partNo": "No. Part",
+    "specs": "Spesifikasi",
+    "fitment": "Kompatibilitas",
+    "inTheBox": "Isi kemasan",
+    "torque": "Spesifikasi torsi",
+    "installDifficulty": "Tingkat pemasangan",
+    "downloads": "Unduhan",
+    "authenticity": "Keaslian",
+    "related": "Part terkait",
+    "buy": "Tempat membeli part ini",
+    "whatsapp": "Tanya via WhatsApp",
+    "pending": "TBD · menunggu verifikasi",
+    "verified": "terverifikasi",
+    "tbd": "TBD",
+    "backTo": "Kembali ke",
+    "products": "Produk",
+    "filter": "Filter",
+    "sort": "Urutkan",
+    "search": "Cari part",
+    "sortAz": "Nama A–Z",
+    "sortNew": "Terbaru",
+    "noResults": "Tidak ada part yang cocok. Hapus filter untuk melihat semua.",
+    "explodedHint": "Gulir untuk membongkar",
+    "dragHint": "Seret untuk memutar",
+    "textEquivalent": "Deskripsi adegan",
+    "home": "Beranda"
+  },
+  "fit": {
+    "eyebrow": "SYS · FITMENT / PILIH MOTOR",
+    "title": "Part yang cocok untuk motormu.",
+    "sub": "Pilih motormu. Kami hanya menampilkan yang bisa kami verifikasi.",
+    "brand": "Merek",
+    "model": "Model",
+    "year": "Tahun",
+    "resultsFor": "Part TDR untuk",
+    "resultCount": "{n} part TDR cocok untuk {bike}",
+    "resultCountPending": "{n} kandidat part untuk {bike} — data kompatibilitas sedang diverifikasi oleh tim teknik TDR.",
+    "empty": "Belum ada data kompatibilitas terverifikasi untuk motor ini. Basis data fitment sedang diisi — cek lagi nanti, atau tanya kami langsung.",
+    "zones": "Zona pemasangan",
+    "reset": "Ganti motor"
+  },
+  "buyStrip": {
+    "eyebrow": "SYS · DISTRIBUSI / NUSANTARA",
+    "title": "Dari Jakarta, ke seluruh nusantara.",
+    "sub": "Toko marketplace, jaringan retail TDR HPZ, dan distributor di Indonesia serta Asia Tenggara.",
+    "cta": "Cari dealer"
+  },
+  "techTeaser": {
+    "eyebrow": "SYS · TEKNOLOGI / RUANG DYNO",
+    "title": "Part adalah klaim. Dyno adalah wasitnya.",
+    "sub": "Setiap siklus desain TDR berakhir di ruangan yang sama: sel dynamometer di TDR Technology Center, Jakarta.",
+    "cta": "Jelajahi Technology Center"
+  },
+  "news": { "eyebrow": "SYS · LOG / TERBARU", "title": "Terbaru dari bengkel.", "all": "Semua berita" },
+  "footer": {
+    "tagline": "Part motor performa tinggi. Jakarta, sejak 2003.",
+    "sitemap": "Indeks",
+    "legal": "TDR Industries Group",
+    "language": "Bahasa",
+    "build": "MACHINE OS v2.0"
+  },
+  "a11y": {
+    "skipToContent": "Langsung ke konten",
+    "sceneHero": "Adegan 3D: skuter sport ber-part TDR melayang di ruang bengkel gelap, terbentuk dari rangka kawat sian menjadi logam presisi.",
+    "sceneWorkshop": "Adegan 3D: kamera menyusuri TDR Technology Center — area CNC, sel dyno, lini coating, dan lab QC.",
+    "sceneTrack": "Adegan 3D: sirkuit balap malam hari dengan racing line merah menyala dan partikel telemetri.",
+    "sceneMap": "Adegan 3D: peta garis Indonesia dan Asia Tenggara dengan markas TDR berdenyut di Jakarta.",
+    "sceneExploded": "Viewport 3D: produk terurai menjadi komponen saat digulir, dengan anotasi pengukuran.",
+    "openMenu": "Buka navigasi",
+    "scrollProgress": "Progres gulir halaman"
+  },
+  "support": {
+    "title": "Dukungan",
+    "warranty": "Garansi",
+    "authenticity": "Cek keaslian",
+    "install": "Panduan pemasangan",
+    "faq": "FAQ"
+  },
+  "notFound": {
+    "title": "Sinyal hilang.",
+    "sub": "Alamat ini tidak ditemukan. Part yang kamu cari mungkin sudah pindah ke katalog baru.",
+    "cta": "Kembali ke beranda"
+  }
+}

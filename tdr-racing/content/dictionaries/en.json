@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "fit": "Fit my bike",
+    "products": "Products",
+    "technology": "Technology",
+    "racing": "Racing",
+    "news": "News",
+    "downloads": "Downloads",
+    "support": "Support",
+    "whereToBuy": "Where to buy",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "eyebrow": "TDR · MACHINE OS · EST 2003 · JAKARTA",
+    "title": "PRECISION IS THE PRODUCT.",
+    "sub": "High-performance motorcycle parts — engineered, dyno-tested and manufactured by TDR Industries Group, Jakarta. Since 2003.",
+    "ctaFit": "Find parts for your bike",
+    "ctaTech": "Inside the Technology Center",
+    "skip": "Skip intro"
+  },
+  "pillars": {
+    "eyebrow": "SYS · CATALOGUE / FOUR PILLARS",
+    "title": "Four systems. One machine.",
+    "power": { "name": "Power", "line": "Engine internals, ignition, CVT and breathing — the parts that make the number." },
+    "handling": { "name": "Handling", "line": "Suspension, wheels and brakes — the parts that keep the number usable." },
+    "style": { "name": "Style", "line": "Bodywork and riding gear — function you can see." },
+    "maintenance": { "name": "Maintenance", "line": "Lubricants, tools and equipment — tolerances stay tolerances." },
+    "browse": "Browse"
+  },
+  "common": {
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "partNo": "Part No.",
+    "specs": "Specifications",
+    "fitment": "Fitment",
+    "inTheBox": "In the box",
+    "torque": "Torque spec",
+    "installDifficulty": "Install difficulty",
+    "downloads": "Downloads",
+    "authenticity": "Authenticity",
+    "related": "Related parts",
+    "buy": "Where to buy this part",
+    "whatsapp": "Ask via WhatsApp",
+    "pending": "TBD · pending verification",
+    "verified": "verified",
+    "tbd": "TBD",
+    "backTo": "Back to",
+    "products": "Products",
+    "filter": "Filter",
+    "sort": "Sort",
+    "search": "Search parts",
+    "sortAz": "Name A–Z",
+    "sortNew": "Newest",
+    "noResults": "No parts match. Clear the filter to see the full range.",
+    "explodedHint": "Scroll to disassemble",
+    "dragHint": "Drag to orbit",
+    "textEquivalent": "Scene description",
+    "home": "Home"
+  },
+  "fit": {
+    "eyebrow": "SYS · FITMENT / SELECTOR",
+    "title": "Parts that fit your bike.",
+    "sub": "Pick your machine. We list only what we can verify.",
+    "brand": "Brand",
+    "model": "Model",
+    "year": "Year",
+    "resultsFor": "TDR parts for your",
+    "resultCount": "{n} TDR parts fit your {bike}",
+    "resultCountPending": "{n} candidate parts for your {bike} — fitment records are being verified with TDR engineering.",
+    "empty": "No verified fitment records for this bike yet. The fitment database is being populated — check back, or ask us directly.",
+    "zones": "Fitment zones",
+    "reset": "Change bike"
+  },
+  "buyStrip": {
+    "eyebrow": "SYS · DISTRIBUTION / ARCHIPELAGO",
+    "title": "From Jakarta, across the archipelago.",
+    "sub": "Marketplace stores, the TDR HPZ retail network and distributors across Indonesia and Southeast Asia.",
+    "cta": "Find a dealer"
+  },
+  "techTeaser": {
+    "eyebrow": "SYS · TECH / DYNO CELL",
+    "title": "Parts are claims. The dyno is the referee.",
+    "sub": "Every TDR design cycle ends in the same room: the dynamometer cell at the TDR Technology Center, Jakarta.",
+    "cta": "Tour the Technology Center"
+  },
+  "news": { "eyebrow": "SYS · LOG / LATEST", "title": "Latest from the workshop.", "all": "All news" },
+  "footer": {
+    "tagline": "High-performance motorcycle parts. Jakarta, since 2003.",
+    "sitemap": "Index",
+    "legal": "TDR Industries Group",
+    "language": "Language",
+    "build": "MACHINE OS v2.0"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "sceneHero": "3D scene: a TDR-equipped sport scooter floating in a dark workshop void, materialising from cyan wireframe into machined metal.",
+    "sceneWorkshop": "3D scene: a camera travels through the TDR Technology Center — CNC bay, dyno cell, coating line and QC lab.",
+    "sceneTrack": "3D scene: a night-time race circuit with a glowing red racing line and telemetry particles.",
+    "sceneMap": "3D scene: a dark line-drawn map of Indonesia and Southeast Asia with the TDR headquarters pulsing in Jakarta.",
+    "sceneExploded": "3D viewport: the product disassembles into its components as you scroll, with measurement callouts.",
+    "openMenu": "Open navigation",
+    "scrollProgress": "Page scroll progress"
+  },
+  "support": {
+    "title": "Support",
+    "warranty": "Warranty",
+    "authenticity": "Authenticity check",
+    "install": "Install guides",
+    "faq": "FAQ"
+  },
+  "notFound": {
+    "title": "Signal lost.",
+    "sub": "This address doesn't resolve. The part you're looking for may have moved to the new catalogue.",
+    "cta": "Back to home"
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "machine-os-v2",
+    "date": "2026-07-14",
+    "title": "tdr-racing.com v2: MACHINE OS is live",
+    "titleId": "tdr-racing.com v2: MACHINE OS sudah tayang",
+    "excerpt": "A ground-up rebuild of the TDR site: realtime 3D, a fitment finder, and a spec-first product catalogue that says TBD instead of guessing.",
+    "excerptId": "Situs TDR dibangun ulang dari nol: 3D realtime, pencari kompatibilitas, dan katalog produk berbasis spesifikasi yang menulis TBD alih-alih menebak.",
+    "body": [
+      "The new site runs like the workshop does: dark, quiet, and measured. Every product page is built around part numbers, specifications and fitment — and where a value hasn't been verified by TDR engineering yet, the page says so instead of inventing it.",
+      "The site adapts to your hardware. High-end devices get the full realtime 3D experience; mid-range phones get the same content with pre-rendered motion; and if you prefer reduced motion, everything is still and instantly legible. Nothing about your bike's fitment ever hides inside the 3D.",
+      "Start at the fitment finder: pick your brand, model and year, and see exactly which TDR parts are catalogued for your machine."
+    ],
+    "bodyId": [
+      "Situs baru ini berjalan seperti bengkelnya: gelap, tenang, dan terukur. Setiap halaman produk dibangun di sekitar nomor part, spesifikasi, dan kompatibilitas — dan jika sebuah nilai belum diverifikasi tim teknik TDR, halamannya berkata jujur alih-alih mengarang.",
+      "Situs menyesuaikan dengan perangkatmu. Perangkat kencang mendapat pengalaman 3D realtime penuh; ponsel kelas menengah mendapat konten yang sama dengan gerakan pra-render; dan jika kamu memilih mengurangi animasi, semuanya tetap terbaca seketika. Data kompatibilitas motormu tidak pernah bersembunyi di dalam 3D.",
+      "Mulai dari pencari kompatibilitas: pilih merek, model, dan tahun, lalu lihat part TDR mana saja yang terdata untuk motormu."
+    ],
+    "tag": "SYS · RELEASE"
+  },
+  {
+    "slug": "inside-the-technology-center",
+    "date": "2026-07-01",
+    "title": "Inside the Technology Center: four rooms, one tolerance",
+    "titleId": "Di dalam Technology Center: empat ruangan, satu toleransi",
+    "excerpt": "CNC bay, dyno cell, coating line, QC lab — the route every TDR part travels before it gets a part number.",
+    "excerptId": "Area CNC, sel dyno, lini coating, lab QC — rute yang dilalui setiap part TDR sebelum mendapat nomor part.",
+    "body": [
+      "Every part in this catalogue walks the same route through the Jakarta facility. It is machined in the CNC bay, proven in the dyno cell, finished on the coating line, and measured in the QC lab. If it misses a tolerance in room four, it goes back to room one.",
+      "The Technology tour on this site follows that exact route — the camera path through the 3D workshop is the part's path. The numbers on the panels come from the same measurement culture: when a spec is published here, it has been through room four.",
+      "Detailed station write-ups, equipment lists and process specs are being prepared for publication with TDR engineering."
+    ],
+    "bodyId": [
+      "Setiap part di katalog ini menempuh rute yang sama di fasilitas Jakarta. Dimesin di area CNC, dibuktikan di sel dyno, dirapikan di lini coating, dan diukur di lab QC. Kalau gagal toleransi di ruangan keempat, ia kembali ke ruangan pertama.",
+      "Tur Teknologi di situs ini mengikuti rute itu persis — jalur kamera di bengkel 3D adalah jalur si part. Angka di panel berasal dari budaya pengukuran yang sama: ketika sebuah spesifikasi tayang di sini, ia sudah melewati ruangan keempat.",
+      "Tulisan detail per stasiun, daftar peralatan, dan spesifikasi proses sedang disiapkan untuk dipublikasikan bersama tim teknik TDR."
+    ],
+    "tag": "SYS · TECH"
+  },
+  {
+    "slug": "one-team-2026",
+    "date": "2026-06-15",
+    "title": "TDR One Team: the 2026 program",
+    "titleId": "TDR One Team: program 2026",
+    "excerpt": "The racing program continues as the proving ground for everything in this catalogue. Schedule and results will be published here once confirmed.",
+    "excerptId": "Program balap berlanjut sebagai tempat pembuktian untuk seluruh isi katalog ini. Jadwal dan hasil akan dipublikasikan di sini setelah dikonfirmasi.",
+    "body": [
+      "One Team is where TDR parts earn their claims: race weekends are development cycles with lap times for feedback. The parts that survive a season of that become the catalogue you're browsing.",
+      "The 2026 calendar, rider lineup and results are pending confirmation from the team and will be published on the Racing page — verified, like everything else on this site."
+    ],
+    "bodyId": [
+      "One Team adalah tempat part TDR membuktikan klaimnya: akhir pekan balap adalah siklus pengembangan dengan lap time sebagai umpan balik. Part yang bertahan semusim di sana menjadi katalog yang sedang kamu jelajahi.",
+      "Kalender 2026, susunan pembalap, dan hasil balap menunggu konfirmasi dari tim dan akan dipublikasikan di halaman Racing — terverifikasi, seperti semua hal lain di situs ini."
+    ],
+    "tag": "SYS · RACE"
+  }
+]

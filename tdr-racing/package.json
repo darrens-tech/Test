@@ -1,0 +1,45 @@
+{
+  "name": "tdr-racing",
+  "version": "2.0.0",
+  "private": true,
+  "description": "tdr-racing.com v2 — MACHINE OS. Cinematic WebGL rebuild.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "qa:screens": "node qa/screens.mjs",
+    "qa:axe": "node qa/axe.mjs",
+    "qa:capture": "node qa/capture.mjs",
+    "media:render": "node qa/render-media.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.5",
+    "@fontsource/space-grotesk": "^5.2.5",
+    "@react-three/drei": "^10.0.6",
+    "@react-three/fiber": "^9.1.2",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.4",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.176.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.176.0",
+    "@types/topojson-client": "^3.1.5",
+    "playwright-core": "^1.52.0",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
+  }
+}

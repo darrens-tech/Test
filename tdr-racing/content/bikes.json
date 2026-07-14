@@ -1,0 +1,10 @@
+[
+  { "make": "Honda", "makeSlug": "honda", "model": "Vario 160", "slug": "vario-160", "yearFrom": 2022, "yearTo": null, "engine": "156.9cc eSP+ (K2V)" },
+  { "make": "Honda", "makeSlug": "honda", "model": "Vario 125", "slug": "vario-125", "yearFrom": 2012, "yearTo": null, "engine": "125cc eSP" },
+  { "make": "Honda", "makeSlug": "honda", "model": "PCX 160", "slug": "pcx-160", "yearFrom": 2021, "yearTo": null, "engine": "156.9cc eSP+ (K1Z)" },
+  { "make": "Honda", "makeSlug": "honda", "model": "BeAT", "slug": "beat", "yearFrom": 2012, "yearTo": null, "engine": "110cc eSP" },
+  { "make": "Honda", "makeSlug": "honda", "model": "ADV 160", "slug": "adv-160", "yearFrom": 2022, "yearTo": null, "engine": "156.9cc eSP+" },
+  { "make": "Yamaha", "makeSlug": "yamaha", "model": "NMAX 155", "slug": "nmax-155", "yearFrom": 2015, "yearTo": null, "engine": "155cc VVA Blue Core" },
+  { "make": "Yamaha", "makeSlug": "yamaha", "model": "Aerox 155", "slug": "aerox-155", "yearFrom": 2017, "yearTo": null, "engine": "155cc VVA Blue Core" },
+  { "make": "Yamaha", "makeSlug": "yamaha", "model": "Mio M3 125", "slug": "mio-m3-125", "yearFrom": 2014, "yearTo": null, "engine": "125cc Blue Core" }
+]
