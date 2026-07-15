@@ -92,6 +92,7 @@ export function HeroMachine({ locale, dict }: { locale: Locale; dict: Dictionary
           alt=""
           fill
           priority
+          quality={60}
           sizes="100vw"
           className="object-cover opacity-80"
         />
@@ -124,8 +125,10 @@ export function HeroMachine({ locale, dict }: { locale: Locale; dict: Dictionary
         </div>
       </div>
 
-      {/* boot readout — bottom right, the viewport's one scanline */}
-      <div className="panel ticks scanline absolute bottom-6 right-6 z-10 hidden w-64 px-5 py-4 md:block">
+      {/* boot readout — bottom right. §12.4: its scanline sweep was removed —
+          furniture must never be louder than content, and this panel's content
+          already moves (the boot log). */}
+      <div className="panel ticks absolute bottom-6 right-6 z-10 hidden w-64 px-5 py-4 md:block">
         <p className="micro mb-2">TELEMETRY · BOOT</p>
         <p className="readout text-sm text-hud" aria-live="polite">
           {bootLine}

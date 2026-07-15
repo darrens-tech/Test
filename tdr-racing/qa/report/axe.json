@@ -1,0 +1,182 @@
+[
+  {
+    "route": "/",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/products",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/products/power",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/products/power/clutch-transmission-cvt",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/products/power/clutch-transmission-cvt/racing-cvt-set-vario-160-pcx-160",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/fit",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/fit/honda/vario-160/2024",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/technology",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/racing",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/where-to-buy",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/news",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/news/machine-os-v2",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/downloads",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/support",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/about",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/contact",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/id",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/id/fit",
+    "tier": 3,
+    "violations": []
+  },
+  {
+    "route": "/",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/products",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/products/power",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/products/power/clutch-transmission-cvt",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/products/power/clutch-transmission-cvt/racing-cvt-set-vario-160-pcx-160",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/fit",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/fit/honda/vario-160/2024",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/technology",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/racing",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/where-to-buy",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/news",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/news/machine-os-v2",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/downloads",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/support",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/about",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/contact",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/id",
+    "tier": 1,
+    "violations": []
+  },
+  {
+    "route": "/id/fit",
+    "tier": 1,
+    "violations": []
+  }
+]

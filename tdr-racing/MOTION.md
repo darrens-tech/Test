@@ -79,8 +79,10 @@ camera / content 1.0×) — never on flowing sections.
 - One hero motion moment per viewport; everything else `Reveal` (opacity/24px)
   or nothing.
 - Hover: border→`--hud` + 4px lift, 0.25s (`.lift`). One property family.
-- One scanline per viewport (hero boot panel only). Glass ≤3/viewport
-  (dev-enforced by `GlassBudget`).
+- Scanlines: **zero shipped** — the §12.4 removal. The last one (hero boot
+  panel) competed with its own boot-log content; the `.scanline` utility
+  remains available but unused. Glass ≤3/viewport (dev-enforced by
+  `GlassBudget`).
 - `prefers-reduced-motion` → Tier 3 at the init script, before paint: Lenis
   never constructs, pins render as stacked static variants, scenes are
   posters, `[data-reveal]` never hides content. CSS safety animation un-hides

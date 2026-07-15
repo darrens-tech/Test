@@ -46,8 +46,11 @@ async function main() {
 
   for (const tier of [3, 1]) {
     for (const route of ROUTES) {
-      const page = await browser.newPage({ viewport: { width: 1366, height: 900 } });
-      await page.emulateMedia({ reducedMotion: tier === 3 ? "reduce" : "no-preference" });
+      const context = await browser.newContext({
+        viewport: { width: 1366, height: 900 },
+        reducedMotion: tier === 3 ? "reduce" : "no-preference",
+      });
+      const page = await context.newPage();
       await page.addInitScript((t) => {
         sessionStorage.setItem("tdr-tier", String(t));
         sessionStorage.setItem("tdr-bench", "1");
@@ -73,7 +76,7 @@ async function main() {
       console.log(
         `t${tier} ${route.padEnd(64)} ${violations.length === 0 ? "clean" : violations.map((v) => `${v.id}×${v.count}`).join(", ")}`,
       );
-      await page.close();
+      await context.close();
     }
   }
 

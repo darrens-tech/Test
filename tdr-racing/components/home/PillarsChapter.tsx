@@ -97,7 +97,7 @@ export function PillarsChapter({ locale, dict }: { locale: Locale; dict: Diction
                   className="panel ticks absolute inset-x-0 top-1/2 -translate-y-1/2 p-8 lg:p-10"
                 >
                   <p className="micro micro--hud mb-4">{p.code}</p>
-                  <h3 className="display-2">{pillarCopy(p.slug).name}</h3>
+                  <h2 className="display-2">{pillarCopy(p.slug).name}</h2>
                   <p className="mt-4 max-w-md text-chrome">{pillarCopy(p.slug).line}</p>
                   <ul className="mt-6 flex flex-wrap gap-2">
                     {p.subcategories.map((s) => (

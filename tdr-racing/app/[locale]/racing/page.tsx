@@ -69,7 +69,7 @@ export default async function RacingPage({ params }: { params: Params }) {
         <p className="claim mt-6 max-w-2xl text-chrome" data-reveal="">
           {copy.sub}
         </p>
-        <p className="micro mt-4 opacity-70" data-reveal="">
+        <p className="micro mt-4" data-reveal="">
           {copy.note}
         </p>
       </header>

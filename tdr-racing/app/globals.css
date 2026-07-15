@@ -200,12 +200,15 @@ body {
     border-color var(--dur-micro) var(--ease-machined);
 }
 .btn:hover { transform: translateY(-2px); }
+/* CTA fill is a deepened race red: white 13px mono on pure #E1231D is 4.4:1
+   (fails AA); this mix is ~6:1. Pure --redline remains the mark/line/accent
+   red — non-text uses, where 3:1 passes. */
 .btn-primary {
-  background: var(--color-redline);
+  background: color-mix(in srgb, var(--color-redline) 80%, black);
   color: var(--color-white);
-  border: 1px solid transparent;
+  border: 1px solid color-mix(in srgb, var(--color-redline) 55%, transparent);
 }
-.btn-primary:hover { background: color-mix(in srgb, var(--color-redline) 88%, white); }
+.btn-primary:hover { background: color-mix(in srgb, var(--color-redline) 68%, black); }
 .btn-ghost {
   border: 1px solid var(--glass-brd);
   color: var(--color-white);
@@ -292,6 +295,14 @@ body {
 [data-motion="full"] .split-line > span {
   display: block;
   transform: translateY(110%);
+}
+
+/* Headlines pre-hide for the masked rise on Tier 1 only. Tier 2 paints them
+   immediately (LCP gate, brief §10) — below-fold headlines still animate on
+   scroll; above-fold ones render static there. */
+[data-tier="1"][data-motion="full"] [data-split-hide] {
+  opacity: 0;
+  animation: reveal-safety 0.4s ease 2.8s forwards;
 }
 
 /* grid floor line-work for section floors (cheap, no GL) */

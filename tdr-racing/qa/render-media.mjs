@@ -60,14 +60,14 @@ async function main() {
     await hideChrome();
     await page.waitForTimeout(300);
     const buf = await page.screenshot({ type: "png" });
-    await save(buf, out, 1600);
+    await save(buf, out, 1440, 64); // posters stay under the 120KB budget
     console.log("scene →", out);
   }
 
-  async function save(buf, rel, width) {
+  async function save(buf, rel, width, quality = 70) {
     const file = path.join(OUT, rel);
     await mkdir(path.dirname(file), { recursive: true });
-    await sharp(buf).resize({ width }).jpeg({ quality: 74, mozjpeg: true }).toFile(file);
+    await sharp(buf).resize({ width }).jpeg({ quality, mozjpeg: true }).toFile(file);
     shots.push(rel);
   }
 

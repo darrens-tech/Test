@@ -204,11 +204,11 @@ export default async function FitPage({ params }: { params: Params }) {
               {results.length > 0 && (
                 <ul className="mt-6 grid gap-5 sm:grid-cols-2">
                   {results.map((p, i) => (
-                    <Reveal key={p.slug} delay={i * 0.05}>
-                      <li>
+                    <li key={p.slug}>
+                      <Reveal delay={i * 0.05}>
                         <ProductCard product={p} locale={locale} dict={dict} />
-                      </li>
-                    </Reveal>
+                      </Reveal>
+                    </li>
                   ))}
                 </ul>
               )}

@@ -29,5 +29,8 @@ export const jetbrainsMono = localFont({
   ],
   variable: "--font-jetbrains",
   display: "swap",
+  // not preloaded: HUD micro-labels can swap late; keeps ~43KB off the
+  // critical path so the display font (the LCP headline) lands sooner
+  preload: false,
   fallback: ["ui-monospace", "monospace"],
 });

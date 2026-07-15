@@ -101,7 +101,7 @@ export function Dock({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <Link
             href={switchLocalePath()}
             className="micro rounded-full border border-(--glass-brd) px-3 py-2 hover:text-white"
-            aria-label={dict.footer.language}
+            aria-label={locale === "en" ? "ID — Bahasa Indonesia" : "EN — English"}
           >
             {locale === "en" ? "ID" : "EN"}
           </Link>

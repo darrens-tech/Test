@@ -29,8 +29,16 @@ export function SplitHeadline({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (document.documentElement.dataset.motion !== "full") {
-      el.removeAttribute("data-reveal");
+    const html = document.documentElement.dataset;
+    if (html.motion !== "full") {
+      el.removeAttribute("data-split-hide");
+      return;
+    }
+    // Tier 2: above-fold (immediate) headlines stay static — they were never
+    // hidden, and re-hiding them after paint would tank LCP for the exact
+    // audience the tier exists for. Scroll-triggered ones still animate.
+    if (html.tier !== "1" && immediate) {
+      el.removeAttribute("data-split-hide");
       return;
     }
 
@@ -65,7 +73,7 @@ export function SplitHeadline({
         line.style.display = "block";
         line.style.overflow = "clip";
       });
-      el.removeAttribute("data-reveal");
+      el.removeAttribute("data-split-hide");
       el.style.opacity = "1";
 
       const targets = el.querySelectorAll(".split-line > span");
@@ -96,7 +104,7 @@ export function SplitHeadline({
 
   return createElement(
     as,
-    { ref, className, "data-reveal": "", "aria-label": text },
+    { ref, className, "data-split-hide": "", "aria-label": text },
     text,
   );
 }

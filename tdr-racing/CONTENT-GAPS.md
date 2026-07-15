@@ -11,7 +11,7 @@ editing the JSON and flipping `verification` to `verified`.
 
 | ID | Gap | Where | Owner |
 |---|---|---|---|
-| GAP-001 | `--redline` uses the brief's fallback `#E1231D`. Sample the exact red from `https://tdr-racing.com/assets/logo-b.svg` and update `app/globals.css` + `components/gl/fx/materials.ts` | tokens | design |
+| GAP-001 | `--redline` uses the brief's fallback `#E1231D`. Sample the exact red from `https://tdr-racing.com/assets/logo-b.svg` and update `app/globals.css` + `components/gl/fx/materials.ts`. Note: CTA fills use `color-mix(…80%, black)` of this token for WCAG contrast (QA-REPORT §3) — re-check contrast after resampling | tokens | design |
 | GAP-002 | Logo is a placeholder wordmark SVG — replace with production artwork | `components/hud/Logo.tsx` | TDR |
 | GAP-003 | WhatsApp number, phone, HQ address — all contact surfaces route to `/contact` pending chips; never a dead link | contact/where-to-buy/PDP | TDR |
 | GAP-004 | Social channel URLs (WhatsApp/Instagram/YouTube) | contact | TDR |
