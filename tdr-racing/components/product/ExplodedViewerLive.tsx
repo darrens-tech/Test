@@ -65,12 +65,14 @@ function ExplodeRig({
       part.object.position.copy(bases[i]).addScaledVector(part.vector, t);
     });
 
-    build.group.rotation.y = -0.35 + p * 0.3;
+    build.group.rotation.y = -0.55 + p * 0.4;
 
+    // frame the whole row: pull back and track its centre as it extends
     const r = build.radius;
-    const target = v.set(r * 1.15 + p * r * 0.9, r * 0.55, r * 1.9 + p * r * 0.75);
+    const cx = p * r * 0.35;
+    const target = v.set(cx + r * 0.85, r * 0.5, r * (2.1 + p * 1.15));
     camera.position.lerp(target, 1 - Math.exp(-3.5 * d));
-    camera.lookAt(p * 0.3, 0, 0);
+    camera.lookAt(cx, 0, 0);
 
     anchorsResolved.forEach((slot, i) => {
       const labelEl = refs.labels.current?.[i];

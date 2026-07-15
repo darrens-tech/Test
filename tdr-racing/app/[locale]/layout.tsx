@@ -50,11 +50,10 @@ export default async function RootLayout({
       suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
-      <head>
-        {/* Runs before paint: no tier/motion flash. No-JS stays Tier 3 = fully legible. */}
-        <script dangerouslySetInnerHTML={{ __html: TIER_INIT_SCRIPT }} />
-      </head>
       <body>
+        {/* First node in body: runs before any content paints — no tier/motion
+            flash. No-JS never runs it and stays Tier 3 = fully legible. */}
+        <script dangerouslySetInnerHTML={{ __html: TIER_INIT_SCRIPT }} />
         <a href="#content" className="skip-link">
           {dict.a11y.skipToContent}
         </a>

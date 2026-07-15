@@ -56,7 +56,7 @@ export function LapChapters({
   return (
     <div ref={wrapRef} className="relative [html[data-motion=full]_&]:h-[420vh]">
       <div className="[html[data-motion=full]_&]:sticky [html[data-motion=full]_&]:top-0 [html[data-motion=full]_&]:h-[100svh]">
-        <div className="mx-auto flex h-full w-[min(92vw,1560px)] flex-col justify-between gap-6 py-28 [html[data-motion=static]_&]:py-10">
+        <div className="container-x flex h-full flex-col justify-between gap-6 py-28 [html[data-motion=static]_&]:py-10">
           {/* S1 — live lap telemetry (computed, mono) */}
           <div className="panel ticks w-fit px-6 py-4">
             <p className="micro micro--hud">TELEMETRY · LAP</p>

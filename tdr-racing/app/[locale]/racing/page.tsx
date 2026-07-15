@@ -61,7 +61,7 @@ export default async function RacingPage({ params }: { params: Params }) {
 
   return (
     <div className="pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-12">
+      <header className="container-x pb-12">
         <p className="micro micro--hud mb-5" data-reveal="">
           SYS · RACE / ONE TEAM — SENTUL
         </p>
@@ -92,7 +92,7 @@ export default async function RacingPage({ params }: { params: Params }) {
       />
 
       <section className="relative z-10 border-t border-(--glass-brd) bg-bay py-20">
-        <div className="mx-auto flex w-[min(92vw,1560px)] flex-wrap items-center justify-between gap-6">
+        <div className="container-x flex flex-wrap items-center justify-between gap-6">
           <Reveal>
             <h2 className="display-2 max-w-xl">{copy.cta}</h2>
           </Reveal>

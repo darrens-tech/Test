@@ -52,8 +52,8 @@ export function Dust({
           p.z += cos(t * 0.8) * 0.18;
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
           gl_Position = projectionMatrix * mv;
-          float size = 1.2 + fract(aSeed * 7.31) * 2.2;
-          gl_PointSize = size * (140.0 / -mv.z);
+          float size = 0.9 + fract(aSeed * 7.31) * 1.5;
+          gl_PointSize = size * (42.0 / -mv.z);
           vFade = smoothstep(-14.0, -2.5, mv.z);
         }
       `,

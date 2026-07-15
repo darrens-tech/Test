@@ -44,7 +44,7 @@ export default async function DownloadsPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-14">
+      <header className="container-x pb-14">
         <p className="micro micro--hud mb-5" data-reveal="">
           SYS · DOCS / DOWNLOADS
         </p>
@@ -53,7 +53,7 @@ export default async function DownloadsPage({ params }: { params: Params }) {
           {t.sub}
         </p>
       </header>
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-5 pb-16 md:grid-cols-3">
+      <div className="container-x grid gap-5 pb-16 md:grid-cols-3">
         {t.groups.map(([title, sub], i) => (
           <Reveal key={title} delay={i * 0.05}>
             <div className="panel panel--solid ticks h-full p-7">
@@ -66,7 +66,7 @@ export default async function DownloadsPage({ params }: { params: Params }) {
           </Reveal>
         ))}
       </div>
-      <div className="mx-auto w-[min(92vw,1560px)] pb-28">
+      <div className="container-x pb-28">
         <Reveal>
           <p className="text-sm text-chrome">
             {t.note}{" "}

@@ -80,7 +80,7 @@ export function HeroMachine({ locale, dict }: { locale: Locale; dict: Dictionary
   }, []);
 
   return (
-    <section className="atmo relative flex min-h-[100svh] items-end overflow-hidden">
+    <section className="atmo relative min-h-[100svh] overflow-hidden">
       {/* Poster — the LCP element. Canvas (fixed, z-0 behind main) takes over on Tier 1. */}
       <div
         ref={posterRef}
@@ -100,7 +100,7 @@ export function HeroMachine({ locale, dict }: { locale: Locale; dict: Dictionary
 
       <p className="sr-only">{dict.a11y.sceneHero}</p>
 
-      <div className="relative z-10 mx-auto w-[min(92vw,1560px)] pb-24 pt-40">
+      <div className="container-x relative z-10 flex min-h-[100svh] flex-col justify-end pb-24 pt-40">
         <p className="micro micro--hud mb-6" data-reveal="">
           {dict.hero.eyebrow}
         </p>

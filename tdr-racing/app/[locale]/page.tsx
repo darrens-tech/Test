@@ -41,7 +41,7 @@ export default async function HomePage({
       {/* Beat 3 · Technology teaser — the dyno is the referee */}
       <section className="relative overflow-hidden bg-bay py-28">
         <div className="gridfloor absolute inset-0" aria-hidden="true" />
-        <div className="relative mx-auto grid w-[min(92vw,1560px)] items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
+        <div className="relative container-x grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
           <Reveal>
             <div className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-(--glass-brd)">
               <Image
@@ -78,7 +78,7 @@ export default async function HomePage({
 
       {/* Beat 4 · Latest news — quiet glass cards */}
       <section className="py-28">
-        <div className="mx-auto w-[min(92vw,1560px)]">
+        <div className="container-x">
           <Reveal>
             <p className="micro micro--hud mb-4">{dict.news.eyebrow}</p>
           </Reveal>
@@ -114,7 +114,7 @@ export default async function HomePage({
 
       {/* Beat 5 · Where-to-buy strip — the archipelago */}
       <section className="relative overflow-hidden border-t border-(--glass-brd) bg-bay py-28">
-        <div className="relative mx-auto grid w-[min(92vw,1560px)] items-center gap-10 lg:grid-cols-2">
+        <div className="relative container-x grid items-center gap-10 lg:grid-cols-2">
           <div>
             <Reveal>
               <p className="micro micro--hud mb-5">{dict.buyStrip.eyebrow}</p>

@@ -44,7 +44,7 @@ export default async function SubcategoryPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-12">
+      <header className="container-x pb-12">
         <nav aria-label="Breadcrumb" className="micro mb-8 flex flex-wrap gap-2">
           <Link href={localeHref(locale, "/products")} className="hover:text-white">
             {dict.common.products}
@@ -60,7 +60,7 @@ export default async function SubcategoryPage({ params }: { params: Params }) {
         <SplitHeadline text={name} as="h1" className="display-1" immediate delay={0.1} />
       </header>
 
-      <div className="mx-auto w-[min(92vw,1560px)] pb-24">
+      <div className="container-x pb-24">
         <ProductGrid products={products} locale={locale} dict={dict} />
       </div>
     </div>

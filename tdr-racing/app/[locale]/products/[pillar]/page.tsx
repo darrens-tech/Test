@@ -39,7 +39,7 @@ export default async function PillarPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-12">
+      <header className="container-x pb-12">
         <nav aria-label="Breadcrumb" className="micro mb-8">
           <Link href={localeHref(locale, "/products")} className="hover:text-white">
             {dict.common.products}
@@ -55,7 +55,7 @@ export default async function PillarPage({ params }: { params: Params }) {
         </p>
       </header>
 
-      <div className="mx-auto flex w-[min(92vw,1560px)] flex-col gap-14 pb-24">
+      <div className="container-x flex flex-col gap-14 pb-24">
         {def.subcategories.map((sub) => {
           const products = getProductsBySubcategory(def.slug, sub.slug);
           return (

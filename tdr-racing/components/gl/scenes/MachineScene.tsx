@@ -15,7 +15,7 @@ import { Materialise } from "../fx/Materialise";
 import { Dust } from "../fx/Dust";
 import { onScene } from "@/lib/scrollBus";
 
-const CAM_POS = new THREE.Vector3(2.2, 1.05, 3.2);
+const CAM_POS = new THREE.Vector3(2.05, 0.98, 2.95);
 const CAM_LOOK = new THREE.Vector3(0, 0.62, 0);
 
 /**
@@ -67,8 +67,10 @@ export function MachineScene() {
     const d = Math.min(delta, 0.05);
     const m = machineRef.current;
     if (m) {
+      // QA pose hook: freeze a flattering 3/4 for poster renders
+      const posed = sessionStorage.getItem("tdr-qa-pose");
       // slow idle orbit + damped cursor parallax (±3° ≈ 0.052 rad)
-      const targetYaw = t * 0.06 + pointer.current.x * 0.052;
+      const targetYaw = posed ? 0.55 : t * 0.06 + pointer.current.x * 0.052;
       m.rotation.y += (targetYaw - m.rotation.y) * (1 - Math.exp(-3 * d));
       m.rotation.x += (pointer.current.y * 0.02 - m.rotation.x) * (1 - Math.exp(-3 * d));
       // pillars chapter: machine yields the stage to the active part
@@ -101,7 +103,15 @@ export function MachineScene() {
       <pointLight position={[-1.2, 0.25, -1.4]} intensity={0.5} distance={5} color={0xe1231d} />
 
       <group ref={machineRef} position={[0, 0, 0]}>
-        <Materialise object={build.group} getResolve={() => resolve.current} />
+        <Materialise
+          object={build.group}
+          getResolve={() =>
+            // posed QA renders keep a faint wireframe ghost — the aesthetic
+            sessionStorage.getItem("tdr-qa-pose")
+              ? Math.min(resolve.current, 0.94)
+              : resolve.current
+          }
+        />
       </group>
 
       <group ref={propsRef} position={[1.05, 0.85, 0.3]}>
@@ -114,17 +124,17 @@ export function MachineScene() {
       <Grid
         position={[0, 0.001, 0]}
         cellSize={0.55}
-        cellThickness={0.5}
-        cellColor="#0f2732"
+        cellThickness={0.6}
+        cellColor="#144252"
         sectionSize={2.75}
-        sectionThickness={1}
-        sectionColor="#164253"
+        sectionThickness={1.1}
+        sectionColor="#1d5a70"
         fadeDistance={14}
         fadeStrength={1.8}
         infiniteGrid
       />
 
-      <Dust count={6000} box={[9, 4.5, 7]} opacity={0.3} />
+      <Dust count={3500} box={[10, 5, 8]} opacity={0.22} />
     </group>
   );
 }

@@ -88,7 +88,7 @@ function Telemetry({
           p += side * aLane.x + vec3(0.0, aLane.y, 0.0);
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
           gl_Position = projectionMatrix * mv;
-          gl_PointSize = (1.4 + fract(aOffset * 13.7) * 1.8) * (90.0 / -mv.z);
+          gl_PointSize = (1.1 + fract(aOffset * 13.7) * 1.4) * (48.0 / -mv.z);
           vA = step(t, uReveal);
         }
       `,
@@ -97,7 +97,7 @@ function Telemetry({
         varying float vA;
         void main() {
           float d = length(gl_PointCoord - 0.5);
-          gl_FragColor = vec4(uColor, smoothstep(0.5, 0.1, d) * 0.5 * vA);
+          gl_FragColor = vec4(uColor, smoothstep(0.5, 0.1, d) * 0.32 * vA);
         }
       `,
     });
@@ -122,8 +122,8 @@ export function TrackScene() {
   const { road, line, glow, lineCount, glowCount } = useMemo(() => {
     const road = new THREE.TubeGeometry(curve, 480, 0.34, 8, true);
     road.scale(1, 0.1, 1);
-    const line = new THREE.TubeGeometry(curve, 480, 0.035, 6, true);
-    const glow = new THREE.TubeGeometry(curve, 480, 0.085, 6, true);
+    const line = new THREE.TubeGeometry(curve, 480, 0.06, 6, true);
+    const glow = new THREE.TubeGeometry(curve, 480, 0.14, 6, true);
     return {
       road,
       line,
@@ -161,9 +161,9 @@ export function TrackScene() {
     const side = new THREE.Vector3().crossVectors(dir, new THREE.Vector3(0, 1, 0));
     const camTarget = pos
       .clone()
-      .add(side.multiplyScalar(1.3))
+      .add(side.multiplyScalar(2.0))
       .add(new THREE.Vector3(0, 0.9 + (1 - p) * 2.4, 0))
-      .sub(dir.clone().multiplyScalar(1.6));
+      .sub(dir.clone().multiplyScalar(2.4));
     camera.position.lerp(camTarget, 1 - Math.exp(-3 * d));
     camera.lookAt(ahead.x, 0.15, ahead.z);
   });
@@ -203,8 +203,8 @@ export function TrackScene() {
           <meshStandardMaterial color={0x3a434d} metalness={0.9} roughness={0.4} />
         </mesh>
         <mesh position={[0, 1.12, 0]}>
-          <boxGeometry args={[0.12, 0.14, 1.7]} />
-          <meshStandardMaterial color={0x1a2129} emissive={0x8fe3ff} emissiveIntensity={0.35} />
+          <boxGeometry args={[0.1, 0.09, 1.7]} />
+          <meshStandardMaterial color={0x1a2129} emissive={0x8fe3ff} emissiveIntensity={0.12} />
         </mesh>
       </group>
 
@@ -221,7 +221,7 @@ export function TrackScene() {
         <meshStandardMaterial color={0x090c0f} metalness={0.15} roughness={0.9} />
       </mesh>
 
-      <Dust count={4000} box={[14, 4, 12]} opacity={0.18} />
+      <Dust count={2500} box={[14, 4, 12]} opacity={0.14} />
     </group>
   );
 }

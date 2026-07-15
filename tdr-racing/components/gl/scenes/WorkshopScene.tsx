@@ -20,12 +20,12 @@ import { onScene } from "@/lib/scrollBus";
  */
 
 const CAM_PATH = new THREE.CatmullRomCurve3([
-  new THREE.Vector3(-7.0, 1.75, 2.2),
-  new THREE.Vector3(-4.8, 1.5, 0.4),
-  new THREE.Vector3(-2.6, 1.35, -2.0),
-  new THREE.Vector3(0.4, 1.3, -0.7),
-  new THREE.Vector3(3.4, 1.45, -0.4),
-  new THREE.Vector3(5.4, 1.65, -2.2),
+  new THREE.Vector3(-7.6, 2.4, 3.4),
+  new THREE.Vector3(-5.4, 2.1, 1.6),
+  new THREE.Vector3(-3.0, 1.9, -0.8),
+  new THREE.Vector3(0.4, 1.8, 0.6),
+  new THREE.Vector3(3.4, 1.9, 0.8),
+  new THREE.Vector3(6.0, 2.2, -1.4),
 ]);
 
 const LOOK_PATH = new THREE.CatmullRomCurve3([
@@ -193,7 +193,7 @@ export function WorkshopScene() {
 
   return (
     <group>
-      <fogExp2 attach="fog" args={[0x07090b, 0.055]} />
+      <fogExp2 attach="fog" args={[0x07090b, 0.042]} />
       <ambientLight intensity={0.22} />
       <directionalLight position={[2, 6, 3]} intensity={0.9} />
       <directionalLight position={[-5, 3, -4]} intensity={0.5} color={0x8fe3ff} />
@@ -222,7 +222,7 @@ export function WorkshopScene() {
         fadeStrength={1.6}
         infiniteGrid
       />
-      <Dust count={8000} box={[16, 5, 12]} opacity={0.28} />
+      <Dust count={5000} box={[16, 5, 12]} opacity={0.2} />
     </group>
   );
 }

@@ -23,13 +23,13 @@ export default async function NewsPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-14">
+      <header className="container-x pb-14">
         <p className="micro micro--hud mb-5" data-reveal="">
           {dict.news.eyebrow}
         </p>
         <SplitHeadline text={dict.news.title} as="h1" className="display-1 max-w-4xl" immediate delay={0.1} />
       </header>
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-5 pb-28 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container-x grid gap-5 pb-28 md:grid-cols-2 lg:grid-cols-3">
         {news.map((n, i) => (
           <Reveal key={n.slug} delay={i * 0.05}>
             <Link

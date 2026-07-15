@@ -25,12 +25,15 @@ export function routeScene(pathname: string): string | null {
   return null;
 }
 
-/** Demote to Tier 2 after a full 3s window under 24fps (brief §5). */
+/** Demote to Tier 2 after a full 3s window under 24fps (brief §5).
+ *  QA escape hatch: sessionStorage tdr-watchdog=off (software GL in the
+ *  render/QA pipeline would otherwise demote every capture — by design). */
 function Watchdog({ onDemote }: { onDemote: (reason: string) => void }) {
   const acc = useRef({ frames: 0, time: 0, fired: false });
   useFrame((_, delta) => {
     const a = acc.current;
     if (a.fired || document.hidden) return;
+    if (sessionStorage.getItem("tdr-watchdog") === "off") return;
     a.frames += 1;
     a.time += Math.min(delta, 0.25);
     if (a.time >= 3) {

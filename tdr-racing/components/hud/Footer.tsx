@@ -37,7 +37,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
   return (
     <footer className="relative z-10 border-t border-(--glass-brd) bg-bay">
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-10 py-16 md:grid-cols-[2fr_1fr_1fr_1fr]">
+      <div className="container-x grid gap-10 py-16 md:grid-cols-[2fr_1fr_1fr_1fr]">
         <div>
           <Logo className="h-7 w-auto" />
           <p className="mt-4 max-w-xs text-sm text-chrome">{dict.footer.tagline}</p>
@@ -62,7 +62,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         ))}
       </div>
       <div className="border-t border-(--glass-brd)">
-        <div className="mx-auto flex w-[min(92vw,1560px)] flex-wrap items-center justify-between gap-3 py-5">
+        <div className="container-x flex flex-wrap items-center justify-between gap-3 py-5">
           <p className="micro">
             © {year} {dict.footer.legal} · Jakarta
           </p>

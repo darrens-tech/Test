@@ -44,14 +44,14 @@ export default async function AboutPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-14">
+      <header className="container-x pb-14">
         <p className="micro micro--hud mb-5" data-reveal="">
           SYS · ABOUT / TDR INDUSTRIES GROUP — EST 2003
         </p>
         <SplitHeadline text={t.h1} as="h1" className="display-1 max-w-5xl" immediate delay={0.1} />
       </header>
 
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
+      <div className="container-x grid gap-10 pb-16 lg:grid-cols-[1.3fr_1fr]">
         <div className="max-w-2xl">
           {[t.p1, t.p2, t.p3].map((p, i) => (
             <Reveal key={i} delay={i * 0.05}>

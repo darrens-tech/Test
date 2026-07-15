@@ -25,14 +25,14 @@ export default async function ProductsPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-14">
+      <header className="container-x pb-14">
         <p className="micro micro--hud mb-5" data-reveal="">
           {dict.pillars.eyebrow}
         </p>
         <SplitHeadline text={dict.pillars.title} as="h1" className="display-1 max-w-4xl" immediate delay={0.1} />
       </header>
 
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-6 pb-20 md:grid-cols-2">
+      <div className="container-x grid gap-6 pb-20 md:grid-cols-2">
         {PILLARS.map((p, i) => {
           const copy = dict.pillars[p.slug as keyof typeof dict.pillars] as {
             name: string;
@@ -65,7 +65,7 @@ export default async function ProductsPage({ params }: { params: Params }) {
       </div>
 
       <section className="border-t border-(--glass-brd) bg-bay py-16">
-        <div className="mx-auto w-[min(92vw,1560px)]">
+        <div className="container-x">
           <h2 className="micro micro--hud mb-6">SYS · FEATURED</h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {featured.map((p, i) => (

@@ -73,8 +73,8 @@ export function TechnologyChapters({
     <>
       {/* pinned take (Tier 1/2) */}
       <div ref={wrapRef} className="relative h-[480vh] [html[data-motion=static]_&]:hidden">
-        <div className="sticky top-0 flex h-[100svh] items-center">
-          <div className="relative mx-auto h-[60vh] w-[min(92vw,1560px)]">
+        <div className="sticky top-0 h-[100svh]">
+          <div className="container-x relative top-1/2 h-[60vh] -translate-y-1/2">
             {stations.map((s, i) => (
               <div
                 key={s.code}
@@ -100,7 +100,7 @@ export function TechnologyChapters({
       </div>
 
       {/* static stack (Tier 3) */}
-      <div className="mx-auto hidden w-[min(92vw,1560px)] flex-col gap-6 py-16 [html[data-motion=static]_&]:flex">
+      <div className="container-x hidden flex-col gap-6 py-16 [html[data-motion=static]_&]:flex">
         {stations.map((s) => (
           <div key={s.code} className="panel panel--solid ticks p-8">
             <p className="micro micro--hud mb-3">{s.code}</p>

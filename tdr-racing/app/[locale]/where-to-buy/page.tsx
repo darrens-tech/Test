@@ -53,7 +53,7 @@ export default async function WhereToBuyPage({ params }: { params: Params }) {
         </div>
         <p className="sr-only">{dict.a11y.sceneMap}</p>
 
-        <header className="relative mx-auto w-[min(92vw,1560px)] pb-14">
+        <header className="relative container-x pb-14">
           <p className="micro micro--hud mb-5" data-reveal="">
             {dict.buyStrip.eyebrow}
           </p>
@@ -63,7 +63,7 @@ export default async function WhereToBuyPage({ params }: { params: Params }) {
           </p>
         </header>
 
-        <div className="relative mx-auto grid w-[min(92vw,1560px)] gap-6 pb-28 lg:grid-cols-[1fr_26rem] lg:justify-end">
+        <div className="relative container-x grid gap-6 pb-28 lg:grid-cols-[1fr_26rem] lg:justify-end">
           {/* left column intentionally sparse — the map is the content on lg */}
           <div className="hidden lg:block" aria-hidden="true" />
 

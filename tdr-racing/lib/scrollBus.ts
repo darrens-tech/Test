@@ -23,6 +23,12 @@ export function emitScene(m: SceneMessage) {
   for (const fn of listeners) fn(m);
 }
 
+// QA/media-pipeline hook: lets the headless renderer drive scenes directly
+// (qa/render-media.mjs). Harmless in production — it's the same public API.
+if (typeof window !== "undefined") {
+  (window as unknown as { __tdrEmit?: typeof emitScene }).__tdrEmit = emitScene;
+}
+
 export function onScene(fn: Listener): () => void {
   listeners.add(fn);
   return () => listeners.delete(fn);

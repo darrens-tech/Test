@@ -38,7 +38,7 @@ export default async function ContactPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-14">
+      <header className="container-x pb-14">
         <p className="micro micro--hud mb-5" data-reveal="">
           SYS · CONTACT
         </p>
@@ -48,7 +48,7 @@ export default async function ContactPage({ params }: { params: Params }) {
         </p>
       </header>
 
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-6 pb-28 md:grid-cols-2">
+      <div className="container-x grid gap-6 pb-28 md:grid-cols-2">
         <Reveal>
           <div className="panel ticks h-full p-8">
             <h2 className="micro micro--hud mb-4">HQ</h2>

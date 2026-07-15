@@ -79,7 +79,7 @@ export default async function TechnologyPage({ params }: { params: Params }) {
 
   return (
     <div className="pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-16">
+      <header className="container-x pb-16">
         <p className="micro micro--hud mb-5" data-reveal="">
           SYS · TECH / TECHNOLOGY CENTER — JAKARTA
         </p>
@@ -104,7 +104,7 @@ export default async function TechnologyPage({ params }: { params: Params }) {
       <TechnologyChapters stations={stations} pendingLabel={dict.common.pending} dict={dict} />
 
       <section className="relative z-10 border-t border-(--glass-brd) bg-bay py-20">
-        <div className="mx-auto flex w-[min(92vw,1560px)] flex-wrap items-center justify-between gap-6">
+        <div className="container-x flex flex-wrap items-center justify-between gap-6">
           <div>
             <Reveal>
               <h2 className="display-2">{locale === "id" ? "Lihat hasilnya." : "See what it produces."}</h2>

@@ -86,7 +86,7 @@ export function PillarsChapter({ locale, dict }: { locale: Locale; dict: Diction
         aria-hidden={false}
       >
         <div className="sticky top-0 flex h-[100svh] items-center overflow-hidden">
-          <div className="mx-auto grid w-[min(92vw,1560px)] items-center gap-8 lg:grid-cols-2">
+          <div className="container-x grid items-center gap-8 lg:grid-cols-2">
             <div className="relative min-h-[24rem]">
               {PILLARS.map((p, i) => (
                 <div
@@ -146,7 +146,7 @@ export function PillarsChapter({ locale, dict }: { locale: Locale; dict: Diction
       </div>
 
       {/* Static variant (Tier 3 / reduced motion / no-JS) */}
-      <section className="mx-auto hidden w-[min(92vw,1560px)] flex-col gap-6 py-24 [html[data-motion=static]_&]:flex">
+      <section className="container-x hidden flex-col gap-6 py-24 [html[data-motion=static]_&]:flex">
         <p className="micro micro--hud">{dict.pillars.eyebrow}</p>
         <h2 className="display-2">{dict.pillars.title}</h2>
         <div className="grid gap-6 md:grid-cols-2">

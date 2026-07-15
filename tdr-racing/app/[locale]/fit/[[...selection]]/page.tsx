@@ -80,7 +80,7 @@ export default async function FitPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-10">
+      <header className="container-x pb-10">
         <p className="micro micro--hud mb-5" data-reveal="">
           {dict.fit.eyebrow}
         </p>
@@ -90,7 +90,7 @@ export default async function FitPage({ params }: { params: Params }) {
         </p>
       </header>
 
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-8 pb-24 lg:grid-cols-[1fr_1.2fr]">
+      <div className="container-x grid gap-8 pb-24 lg:grid-cols-[1fr_1.2fr]">
         {/* selector column */}
         <div className="flex flex-col gap-6">
           <Reveal>

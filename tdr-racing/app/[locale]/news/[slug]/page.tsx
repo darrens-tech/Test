@@ -37,7 +37,7 @@ export default async function NewsPostPage({ params }: { params: Params }) {
 
   return (
     <article className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,880px)] pb-10">
+      <header className="container-narrow pb-10">
         <nav className="micro mb-8">
           <Link href={localeHref(locale, "/news")} className="hover:text-white">
             ← {dict.nav.news}
@@ -54,7 +54,7 @@ export default async function NewsPostPage({ params }: { params: Params }) {
           delay={0.1}
         />
       </header>
-      <div className="mx-auto w-[min(92vw,880px)] pb-28">
+      <div className="container-narrow pb-28">
         {body.map((p, i) => (
           <Reveal key={i} delay={i * 0.04}>
             <p className="mb-6 leading-relaxed text-chrome">{p}</p>

@@ -140,10 +140,10 @@ export function ExplodedViewer({
       aria-label={sceneLabel}
     >
       <p className="sr-only">{sceneLabel}</p>
-      <div className="flex min-h-[100svh] items-center [html[data-motion=full]_&]:sticky [html[data-motion=full]_&]:top-0 [html[data-motion=full]_&]:h-[100svh]">
+      <div className="min-h-[100svh] py-[12svh] [html[data-motion=full]_&]:sticky [html[data-motion=full]_&]:top-0 [html[data-motion=full]_&]:h-[100svh]">
         <div
           ref={viewportRef}
-          className="panel ticks relative mx-auto h-[76svh] w-[min(94vw,1560px)] overflow-hidden"
+          className="panel ticks container-wide relative h-[76svh] overflow-hidden"
         >
           <p className="micro micro--hud absolute left-5 top-4 z-20">
             SYS · VIEWPORT / EXPLODE

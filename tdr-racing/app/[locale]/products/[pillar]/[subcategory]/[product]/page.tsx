@@ -89,7 +89,7 @@ export default async function ProductPage({ params }: { params: Params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* header */}
-      <header className="mx-auto w-[min(92vw,1560px)] pb-10">
+      <header className="container-x pb-10">
         <nav aria-label="Breadcrumb" className="micro mb-8 flex flex-wrap gap-2">
           <Link href={localeHref(locale, "/products")} className="hover:text-white">
             {dict.common.products}
@@ -140,7 +140,7 @@ export default async function ProductPage({ params }: { params: Params }) {
             pendingLabel={dict.common.pending}
           />
           {/* component callouts — plain DOM copy of the annotations, every tier */}
-          <section className="mx-auto w-[min(92vw,1560px)] py-10">
+          <section className="container-x py-10">
             <h2 className="micro micro--hud mb-4">{dict.pdp.annotations}</h2>
             <dl className="grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
               {product.model3d.annotations.map((a) => (
@@ -161,7 +161,7 @@ export default async function ProductPage({ params }: { params: Params }) {
           </section>
         </>
       ) : (
-        <section className="mx-auto w-[min(92vw,1560px)] pb-4">
+        <section className="container-x pb-4">
           <div className="panel panel--solid ticks relative flex aspect-[16/8] items-center justify-center overflow-hidden">
             {poster ? (
               <Image src={poster} alt={product.name} fill sizes="92vw" className="object-cover" />
@@ -178,7 +178,7 @@ export default async function ProductPage({ params }: { params: Params }) {
       )}
 
       {/* data grid */}
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-6 py-12 lg:grid-cols-[1.15fr_1fr]">
+      <div className="container-x grid gap-6 py-12 lg:grid-cols-[1.15fr_1fr]">
         <Reveal>
           <SpecTable product={product} locale={locale} dict={dict} />
         </Reveal>
@@ -244,7 +244,7 @@ export default async function ProductPage({ params }: { params: Params }) {
         </div>
       </div>
 
-      <div className="mx-auto w-[min(92vw,1560px)] pb-12">
+      <div className="container-x pb-12">
         <Reveal>
           <BuyLinks product={product} locale={locale} dict={dict} />
         </Reveal>
@@ -252,7 +252,7 @@ export default async function ProductPage({ params }: { params: Params }) {
 
       {related.length > 0 && (
         <section className="border-t border-(--glass-brd) bg-bay py-16">
-          <div className="mx-auto w-[min(92vw,1560px)]">
+          <div className="container-x">
             <h2 className="micro micro--hud mb-6">{dict.common.related}</h2>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((r, i) => (

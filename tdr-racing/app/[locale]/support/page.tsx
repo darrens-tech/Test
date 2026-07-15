@@ -74,14 +74,14 @@ export default async function SupportPage({ params }: { params: Params }) {
 
   return (
     <div className="atmo pt-36">
-      <header className="mx-auto w-[min(92vw,1560px)] pb-14">
+      <header className="container-x pb-14">
         <p className="micro micro--hud mb-5" data-reveal="">
           SYS · SUPPORT
         </p>
         <SplitHeadline text={t.h1} as="h1" className="display-1 max-w-4xl" immediate delay={0.1} />
       </header>
 
-      <div className="mx-auto grid w-[min(92vw,1560px)] gap-5 pb-16 md:grid-cols-3">
+      <div className="container-x grid gap-5 pb-16 md:grid-cols-3">
         {blocks.map(([title, body], i) => (
           <Reveal key={title} delay={i * 0.05}>
             <div className="panel panel--solid ticks h-full p-7">
@@ -92,7 +92,7 @@ export default async function SupportPage({ params }: { params: Params }) {
         ))}
       </div>
 
-      <section className="mx-auto w-[min(92vw,1560px)] pb-28" aria-labelledby="faq">
+      <section className="container-x pb-28" aria-labelledby="faq">
         <Reveal>
           <h2 id="faq" className="micro micro--hud mb-6">
             {dict.support.faq}

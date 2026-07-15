@@ -102,7 +102,9 @@ function benchGpu(): Promise<boolean> {
 }
 
 export function TierProvider({ children }: { children: ReactNode }) {
-  const [tier, setTier] = useState<Tier>(readDomTier);
+  // Initial state must match SSR (Tier 3) — the real tier is adopted in an
+  // effect, so the first client render is hydration-identical to the server.
+  const [tier, setTier] = useState<Tier>(3);
   const [toast, setToast] = useState<string | null>(null);
 
   const apply = useCallback((t: Tier) => {
@@ -123,7 +125,30 @@ export function TierProvider({ children }: { children: ReactNode }) {
   );
 
   useEffect(() => {
-    setTier(readDomTier());
+    // Self-healing: if React recovered from a hydration error it re-rendered
+    // <html> with the SSR attributes (tier 3), clobbering the init script's
+    // work. Recompute the truth (session first, then sync signals) and stamp
+    // it back — apply() is idempotent.
+    const stored = Number(sessionStorage.getItem("tdr-tier"));
+    let desired: Tier;
+    if (stored === 1 || stored === 2 || stored === 3) desired = stored as Tier;
+    else {
+      const prm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let gl: WebGL2RenderingContext | null = null;
+      try {
+        gl = document.createElement("canvas").getContext("webgl2");
+      } catch {}
+      const nav = navigator as Navigator & { deviceMemory?: number; connection?: { saveData?: boolean } };
+      desired =
+        prm || !gl
+          ? 3
+          : (nav.hardwareConcurrency ?? 4) < 4 || (nav.deviceMemory ?? 4) < 4 || nav.connection?.saveData
+            ? 2
+            : 1;
+    }
+    if (desired !== readDomTier()) apply(desired);
+    else setTier(desired);
+
     // Confirm a provisional Tier 1 with the GPU benchmark — once per session.
     if (readDomTier() === 1 && !sessionStorage.getItem("tdr-bench")) {
       benchGpu().then((ok) => {
